@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="project.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- front page  and the only visible part -->
+    <div id="mainContent">
+     <h2>TO-DO LIST APPLICATION</h2>
+     <P>This app will help to organize,plan,and collaborate on tasks and projects</P>
+     <button id="btn1">Sign Up</button>
+     <button id="btn1">LogIn</button>
+    </div> <br>
+    <!-- signup area -->
+    <div id="signupContainer">
+    <div class="signup">
+        <H3  class="headings">Sign up</H3>
+        <input type="text" placeholder="Firstname" class="sd" id="fname"> <br> <br>
+        <input type="text" placeholder="Lastname" class="sd" id ="lname"><br> <br>
+        <input type="email"placeholder="Email" class="sd" id="email"> <br> <br>
+        <input type="password" placeholder="Password" class="sd" id="pwd"><br> <br>
+        <input type="checkbox" name="agree" >
+        <label for="agree">I agree to the Terms of Use</label> <br> <br>
+        <button id="Sub-btn" onclick="store()">Submit</button>
+    </div>
+    </div> <br> <br> <br>
+    <!-- login area -->
+    <div id="loginContainer">
+        <div class="login">
+            <h3 class="headings">Login</h3>
+            <input type="email" placeholder="Email" class="sd" id="userEmail"><br> <br>
+            <input type="password"placeholder="Password" class="sd" id="userPw"> <br> <br>
+            <button id="log-btn" onclick="check()">Submit</button>
+        </div>
+    </div>
+    <br> <br>
+    <!-- dashbord area -->
+<div class = dashbord>
+        <h4>DASHBORD</h4>
+        <button id="btn-dash">Create New to-do List </button> <br> <br>
+    <div class="container">
+        <header>TO-DO-LIST</header>
+        <div class="inputfeild">
+            <input type="text" placeholder="input your new to-do">
+            <button><i class='bx bx-plus-medical'></i></button>
+        </div>
+          <ul class="todolist">
+              <!-- Data from local storage -->
+           </ul>
+           <div class="footer">
+               <span>You have <span class="pendingNumb"></span> pending tasks</span>
+               <button>Clear All</button>
+           </div>
+    </div>
+    
+</div>
+    
+
+    <script src="project.js"></script>
+</body>
+</html>
